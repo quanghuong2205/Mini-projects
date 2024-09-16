@@ -1,0 +1,134 @@
+.cal {
+  border: 2px solid #47476b;
+  padding: 5px;
+  background: black;
+  width: 340px;
+  position: relative;
+  margin: auto;
+}
+
+.cal-top {
+}
+
+.cal-top__result,
+.cal-top__exp {
+  vertical-align: top;
+  text-align: right;
+  word-wrap: break-word;
+}
+
+.cal-top__result {
+  min-height: 26px;
+  font-size: 20px;
+  color: orange;
+  line-height: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 2px;
+}
+
+.cal-top__result span:nth-child(2) {
+  position: relative;
+  top: -1px;
+}
+
+.cal-top__exp {
+  font-size: 24px;
+  color: #fff;
+  line-height: 1.2;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.cal-body {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    'clear clear divide multiply'
+    'seven eight nine subtract'
+    'four five six add'
+    'one two three equals'
+    'zero zero decimal equals';
+}
+
+.cal-btn {
+  min-height: 65px;
+  color: white;
+  outline: 1px solid black;
+  background: #4d4d4d;
+  font-size: 20px;
+  cursor: default;
+}
+
+.cal-btn:hover {
+  color: black;
+  outline: 0.05em solid grey;
+  z-index: 3;
+}
+
+#zero {
+  grid-area: zero;
+}
+#one {
+  grid-area: one;
+}
+#two {
+  grid-area: two;
+}
+#three {
+  grid-area: three;
+}
+#four {
+  grid-area: four;
+}
+#five {
+  grid-area: five;
+}
+#six {
+  grid-area: six;
+}
+#seven {
+  grid-area: seven;
+}
+#eight {
+  grid-area: eight;
+}
+#nine {
+  grid-area: nine;
+}
+#add {
+  grid-area: add;
+}
+#multiply {
+  grid-area: multiply;
+}
+#divide {
+  grid-area: divide;
+}
+#clear {
+  grid-area: clear;
+  background-color: rgb(172, 57, 57);
+}
+#equals {
+  grid-area: equals;
+  background-color: rgb(0, 68, 102);
+}
+#subtract {
+  grid-area: subtract;
+}
+
+#decimal {
+  grid-area: decimal;
+}
+
+#add,
+#divide,
+#multiply,
+#subtract {
+  background-color: rgb(102, 102, 102);
+}

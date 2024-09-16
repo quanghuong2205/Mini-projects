@@ -1,0 +1,61 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f7f9fc;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.counter-container.fc {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+  height: 120px;
+  margin: auto;
+}
+
+.counter-container.fc:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.counter-container.fc button {
+  font-size: 18px;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ff6f61;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.counter-container.fc button:disabled {
+  background-color: #bdbdbd;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.counter-container.fc button:hover:not(:disabled) {
+  background-color: #ff3d2e;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: scale(1.1);
+}
+
+.counter-container.fc button:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.counter-container.fc #count {
+  font-size: 36px;
+  font-weight: 500;
+}

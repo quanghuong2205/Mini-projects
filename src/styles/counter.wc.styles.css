@@ -1,0 +1,63 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #e0f7fa;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+.counter-container.wc {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+  height: 120px;
+  margin: auto;
+}
+
+.counter-container.wc:hover {
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
+  transform: translateY(-4px);
+}
+
+.counter-container.wc button {
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #00bcd4;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.counter-container.wc button:disabled {
+  background-color: #b0bec5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.counter-container.wc button:hover:not(:disabled) {
+  background-color: #0097a7;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+.counter-container.wc button:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.counter-container.wc #count {
+  font-size: 42px;
+  font-weight: 600;
+  color: #00796b;
+}

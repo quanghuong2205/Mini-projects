@@ -1,0 +1,64 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: red;
+}
+
+.box {
+  width: min(550px, 100%);
+  padding: 40px 50px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.quote {
+  position: relative;
+}
+
+.quote svg {
+  position: relative;
+  top: 5px;
+  margin-right: 6px;
+}
+
+.quote-icon {
+  display: inline;
+  margin-right: 8px;
+}
+
+.quote-content {
+  display: inline;
+  position: relative;
+  text-align: center;
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+.author {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 6px;
+}
+
+.author span:first-child {
+  font-size: 12px;
+}
+
+.new-quote {
+  height: 40px;
+  border-radius: 3px;
+  padding: 8px 16px;
+  color: #fff;
+  background-color: red;
+}
+
+.quote-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
